@@ -22,6 +22,7 @@ export default function App() {
         data={courseGoals}
         renderItem = {itemData => 
           <GoalItem 
+            onDelete={() => console.log("I'm here")}
             title={itemData.item.value}/>
         }/>
     </View>
